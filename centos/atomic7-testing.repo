@@ -1,0 +1,12 @@
+[atomic7-testing]
+name=Atomic 7 Testing
+baseurl=http://cbs.centos.org/repos/atomic7-testing/x86_64/os/
+enabled=1
+gpgcheck=0
+
+[atomic7-testing-source]
+name=Atomic 7 Testing Source
+baseurl=http://cbs.centos.org/repos/atomic7-testing/source/SRPMS/
+enabled=1
+gpgcheck=0
+
