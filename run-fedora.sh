@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker run --rm -ti --security-opt="label:disable" -v $(pwd):/ostree ostreetests/fedora
+docker run --rm -ti --security-opt="label:disable" -v $(pwd):/ostree gscrivano/ostreetests:fedora
