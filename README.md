@@ -7,6 +7,13 @@ Building
 --------
 Use ```make``` to generate the container image.
 
+Otherwise, you can pull them from hub.docker.io using these commands:
+
+```
+# docker pull gscrivano/ostreetests:fedora
+# docker pull gscrivano/ostreetests:centos
+```
+
 Run
 ------------------
 
