@@ -19,4 +19,9 @@ Run
 
 Use the ```run-fedora.sh``` and ```run-centos.sh``` scripts from the
 OSTree source directory to build OSTree in a Docker container and
-execute tests respectively on Fedora and on CentOS.
+execute tests respectively on Fedora and on CentOS.  For example:
+
+```
+# ./run-centos.sh /path/to/ostree
+# ./run-fedora.sh /path/to/ostree
+```

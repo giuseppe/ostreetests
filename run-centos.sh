@@ -1,3 +1,7 @@
 #!/bin/sh
 
-docker run --rm -ti --security-opt="label:disable" -v $(pwd):/ostree gscrivano/ostreetests:centos
+PWD=$(pwd)
+OSTREE_LOCATION=${1:-$PWD}
+OSTREE_LOCATION=$(readlink -f $OSTREE_LOCATION)
+
+docker run --rm -ti --security-opt="label:disable" -v $OSTREE_LOCATION:/ostree gscrivano/ostreetests:centos
