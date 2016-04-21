@@ -1,6 +1,8 @@
 FROM fedora:latest
 MAINTAINER Giuseppe Scrivano <gscrivan@redhat.com>
 
+LABEL Name ostreetests
+LABEL Release 1.0
 LABEL Version 1.0
 
 ADD run.sh /run.sh
