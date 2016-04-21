@@ -1,6 +1,8 @@
 FROM centos:latest
 MAINTAINER Giuseppe Scrivano <gscrivan@redhat.com>
 
+LABEL Version 1.0
+
 ADD atomic7-testing.repo /etc/yum.repos.d/
 ADD run.sh /run.sh
 ADD prepare.sh /prepare.sh
