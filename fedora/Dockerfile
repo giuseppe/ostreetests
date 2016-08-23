@@ -6,6 +6,6 @@ LABEL Release 1.0
 LABEL Version 1.0
 
 ADD run.sh /run.sh
-RUN dnf install -y redhat-rpm-config bison rsync yum-utils gcc git autoconf automake which gtk-doc libtool libcap-devel gnome-desktop-testing attr parallel gjs fuse-libs fuse-devel && yum-builddep -y ostree && yum clean all -y
+RUN dnf install -y 'dnf-command(builddep)' redhat-rpm-config bison rsync gcc git autoconf automake which gtk-doc libtool libcap-devel gnome-desktop-testing attr parallel gjs fuse-libs fuse-devel && dnf builddep -y ostree && dnf clean all -y
 
 CMD /run.sh
